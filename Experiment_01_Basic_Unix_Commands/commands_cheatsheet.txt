@@ -1,0 +1,70 @@
+================================================================================
+                    UNIX / LINUX COMMANDS CHEAT SHEET
+================================================================================
+
+1. DIRECTORY OPERATIONS
+   pwd                 : Print working directory
+   cd <path>           : Change directory to <path>
+   cd ..               : Move one level up
+   cd ~                : Move to user home directory
+   mkdir <dir>         : Create a new directory
+   mkdir -p <dir/sub>  : Create parent and child directories recursively
+   rmdir <dir>         : Remove empty directory
+
+2. FILE OPERATIONS
+   touch <filename>    : Create an empty file or update timestamp
+   cp <src> <dest>     : Copy file from src to dest
+   cp -r <src> <dest>  : Copy directory recursively
+   mv <src> <dest>     : Move or rename file/directory
+   rm <file>           : Remove/delete file
+   rm -r <dir>         : Recursively remove directory and its contents
+   rm -rf <dir>        : Forcefully remove directory without prompting
+
+3. LISTING DIRECTORY CONTENTS
+   ls                  : List files and folders
+   ls -l               : Long format listing (permissions, owner, size, date)
+   ls -a               : List all files including hidden files (.filename)
+   ls -lh              : Long format with human-readable file sizes (KB, MB)
+   ls -lt              : Sort listings by modification time (newest first)
+
+4. VIEWING FILE CONTENT
+   cat <file>          : Display entire content on terminal
+   cat > <file>        : Create file from terminal standard input (Ctrl+D to exit)
+   cat file1 file2     : Concatenate multiple files
+   more <file>         : View file screen by screen (forward only)
+   less <file>         : Advanced viewer with backward & forward scrolling
+   head -n 10 <file>   : View first 10 lines
+   tail -n 10 <file>   : View last 10 lines
+   tail -f <file>      : Follow log files in real-time as new lines append
+
+5. PERMISSIONS (chmod)
+   Values: r = 4, w = 2, x = 1
+   Positions: User (Owner) | Group | Others
+   Common Modes:
+     777 : rwxrwxrwx (Full permissions for everyone - avoid in production)
+     755 : rwxr-xr-x (Owner can read/write/execute; others can read/execute)
+     644 : rw-r--r-- (Owner can read/write; others can read only)
+     600 : rw------- (Owner can read/write; no access for anyone else)
+   Symbolic:
+     chmod +x script.sh  : Make script executable
+     chmod u+w file.txt  : Add write permission to owner
+     chmod go-w file.txt : Remove write permission from group and others
+
+6. PROCESS MANAGEMENT
+   ps                  : View current terminal processes
+   ps -ef              : Full system process listing
+   ps aux              : BSD-style system process list
+   top / htop          : Interactive real-time process viewer
+   kill <PID>          : Send SIGTERM (signal 15) to terminate process
+   kill -9 <PID>       : Forcefully kill process (SIGKILL)
+   bg                  : Put process into background
+   fg                  : Bring process to foreground
+
+7. SYSTEM & DISK METRICS
+   df -h               : Filesystem disk usage in human readable format
+   du -sh <dir>        : Disk usage summary of a specific directory
+   free -m             : Memory (RAM and Swap) usage in MB
+   uname -a            : Linux kernel and architecture information
+   whoami              : Current logged-in user name
+================================================================================
+

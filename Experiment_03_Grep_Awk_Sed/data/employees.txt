@@ -1,0 +1,6 @@
+E101 Swapna Manager 85000
+E102 Rahul Engineer 62000
+E103 Ananya Developer 71000
+E104 Amit Analyst 55000
+E105 Pooja Designer 58000
+

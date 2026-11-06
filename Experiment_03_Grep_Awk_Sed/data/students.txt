@@ -1,0 +1,7 @@
+Swapna 101 ComputerScience 3.8
+Rahul 102 Mechanical 3.5
+Ananya 103 Electrical 3.9
+Swapna 104 Civil 3.2
+Amit 105 InformationTechnology 3.6
+Pooja 106 Electronics 3.7
+
