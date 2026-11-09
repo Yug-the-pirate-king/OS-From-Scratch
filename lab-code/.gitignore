@@ -1,0 +1,20 @@
+# Build outputs
+fcfs
+sjf
+priority
+fifo
+lru
+optimal
+fork_vfork
+pthread_demo
+sync_primitives
+producer_consumer
+bankers
+first_fit
+best_fit
+worst_fit
+fcfs_disk
+sstf_disk
+scan_disk
+cscan_disk
+*.exe

@@ -1,0 +1,5 @@
+Swapna 101 CSE 3.8
+Rahul 102 IT 3.5
+Ananya 103 ECE 3.9
+Amit 104 CSE 3.6
+Pooja 105 EEE 3.7
